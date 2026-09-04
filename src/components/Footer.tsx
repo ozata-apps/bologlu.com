@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site } from "@/data/site";
+import { withBasePath } from "@/lib/assetPath";
 
 const corporate = [
   { href: "/hakkimizda", label: "Hakkımızda" },
@@ -14,7 +15,7 @@ export default function Footer() {
       <div className="container-x grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4 lg:py-20">
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.png" alt="Boloğlu logosu" className="h-10 w-auto brightness-0 invert" />
+          <img src={withBasePath("/images/logo.png")} alt="Boloğlu logosu" className="h-10 w-auto brightness-0 invert" />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-stone-400">
             Mutfak ve banyo tezgâhlarında kalite, estetik ve zarafet; birinci sınıf
             işçilikle buluşuyor.
@@ -100,7 +101,7 @@ export default function Footer() {
             Demo Tasarım
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/ozata.png"
+              src={withBasePath("/images/ozata.png")}
               alt="OZATA"
               className="h-6 w-auto"
             />

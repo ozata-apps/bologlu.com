@@ -1,3 +1,5 @@
+import { withBasePath } from "@/lib/assetPath";
+
 export const site = {
   name: "BOLOĞLU",
   tagline: "Mutfak ve Banyo Tezgâhlarında İnce İşçilik",
@@ -23,7 +25,7 @@ export const heroContent = {
   desc: "Çimstone, Belenco, Granit, Coante ve daha fazlası; kalite, estetik ve zarafet birinci sınıf işçilikle buluşuyor.",
   ctaPrimary: { label: "Uygulamalarımızı Keşfedin", href: "/uygulamalar" },
   ctaSecondary: { label: "İletişime Geçin", href: "/iletisim" },
-  image: "/images/hero.jpg",
+  image: withBasePath("/images/hero.jpg"),
   imageAlt:
     "Boloğlu uygulaması: açık renk kuvars tezgâh ve bütün duvar süpürgeliği bulunan modern mutfak",
 };
@@ -33,49 +35,49 @@ export const brands = [
     slug: "lamar",
     name: "Lamar",
     group: "porcelain",
-    logo: "/images/brands/lamar.png",
+    logo: withBasePath("/images/brands/lamar.png"),
     desc: "320cm x 80cm özel boyutlarında geniş format porselen levha çeşidi; doğal mermeri andıran tasarım yelpazesi ile yaşam alanlarına zarif bir görünüm katar.",
   },
   {
     slug: "geoslab",
     name: "GeoSlab",
     group: "porcelain",
-    logo: "/images/brands/geoslab.png",
+    logo: withBasePath("/images/brands/geoslab.png"),
     desc: "Yüksek İtalyan teknolojisiyle üretilen porselen ürünler; çizilmelere, ısıya, güneşe ve kimyasallara karşı yüksek direnç gösterir.",
   },
   {
     slug: "neolith",
     name: "Neolith",
     group: "porcelain",
-    logo: "/images/brands/neolith.png",
+    logo: withBasePath("/images/brands/neolith.png"),
     desc: "En gelişmiş sinterlenmiş taş yüzeylerin tasarımı ve üretiminde dünya lideri; iç ve dış mekân uygulamaları için en uygun yüzey malzemesi.",
   },
   {
     slug: "belenco",
     name: "Belenco",
     group: "quartz",
-    logo: "/images/brands/belenco.png",
+    logo: withBasePath("/images/brands/belenco.png"),
     desc: "%90’ın üzerinde kuvars minerali içeren kuvars yüzeyler; gözeneksiz yapısı ile hijyenik, çizilmeye ve lekelenmeye dirençli.",
   },
   {
     slug: "cimstone",
     name: "Çimstone",
     group: "quartz",
-    logo: "/images/brands/cimstone.png",
+    logo: withBasePath("/images/brands/cimstone.png"),
     desc: "İtalyan BRETON teknolojisiyle üretilen kuvars esaslı kompoze taş; kompakt yapısı ile sıvı emmez, leke tutmaz.",
   },
   {
     slug: "coante",
     name: "Coante",
     group: "quartz",
-    logo: "/images/brands/coante.png",
+    logo: withBasePath("/images/brands/coante.png"),
     desc: "Yenilikçi Breton teknolojisi ile kuvars esaslı kompoze plaka; yüksek çizilme ve kimyasal direnç, leke tutmaz ve hijyenik yapı.",
   },
   {
     slug: "granit",
     name: "Granit",
     group: "natural",
-    logo: "/images/brands/granit.png",
+    logo: withBasePath("/images/brands/granit.png"),
     desc: "Milyonlarca yıl süren jeolojik oluşumlarla meydana gelen doğal magma kayacı; yeryüzünün en sert ve dayanıklı yapı malzemesi.",
   },
 ];
@@ -119,11 +121,11 @@ export const process = [
 ];
 
 export const partners = [
-  { name: "Teka", logo: "/images/brands/teka.png" },
-  { name: "Asil", logo: "/images/brands/asil.png" },
-  { name: "Franke", logo: "/images/brands/franke.png" },
-  { name: "Ukinox", logo: "/images/brands/ukinox.png" },
-  { name: "Silestone", logo: "/images/brands/silestone.png" },
+  { name: "Teka", logo: withBasePath("/images/brands/teka.png") },
+  { name: "Asil", logo: withBasePath("/images/brands/asil.png") },
+  { name: "Franke", logo: withBasePath("/images/brands/franke.png") },
+  { name: "Ukinox", logo: withBasePath("/images/brands/ukinox.png") },
+  { name: "Silestone", logo: withBasePath("/images/brands/silestone.png") },
 ];
 
 export const about = {

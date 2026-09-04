@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { withBasePath } from "@/lib/assetPath";
 
 const nav = [
   { href: "/", label: "Anasayfa" },
@@ -70,7 +71,7 @@ export default function Header() {
         <Link href="/" aria-label="Boloğlu anasayfa" className="shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo.png"
+            src={withBasePath("/images/logo.png")}
             alt="Boloğlu logosu"
             className="h-8 w-auto lg:h-10"
           />

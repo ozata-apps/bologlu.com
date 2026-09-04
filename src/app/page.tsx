@@ -3,6 +3,7 @@ import Reveal from "@/components/Reveal";
 import FeaturedApplications from "@/components/FeaturedApplications";
 import { site, heroContent, brands, brandGroups, whyUs, process, partners, about } from "@/data/site";
 import { applications } from "@/data/applications";
+import { withBasePath } from "@/lib/assetPath";
 
 export default function HomePage() {
   const featured = [
@@ -159,7 +160,7 @@ export default function HomePage() {
             <div className="relative overflow-hidden bg-stone-200">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/apps/belenco-4043-aizano-ege-vitrifiye.jpg"
+                src={withBasePath("/images/apps/belenco-4043-aizano-ege-vitrifiye.jpg")}
                 alt="Boloğlu özel tasarım yatık detaylı süpürgelik uygulaması, banyo tezgâhı"
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover"

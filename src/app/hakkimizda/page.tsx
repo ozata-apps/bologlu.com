@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import { withBasePath } from "@/lib/assetPath";
 import { about, aboutHighlights, whyUs } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -32,7 +33,7 @@ export default function AboutPage() {
             <div className="overflow-hidden bg-stone-200">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/apps/belenco-9113-alinda.jpg"
+                src={withBasePath("/images/apps/belenco-9113-alinda.jpg")}
                 alt="Boloğlu işçiliğiyle uygulanmış Belenco 9113 Alinda mutfak tezgâhı"
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover"

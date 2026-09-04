@@ -1,7 +1,9 @@
+import { withBasePath } from "@/lib/assetPath";
+
 export type ColorItem = { src: string; name: string };
 
 const d = (folder: string, prefix: string, name: string): ColorItem => ({
-  src: `/images/colors/${folder}/${prefix}`,
+  src: withBasePath(`/images/colors/${folder}/${prefix}`),
   name,
 });
 

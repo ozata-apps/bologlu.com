@@ -5,6 +5,7 @@ import Reveal from "@/components/Reveal";
 import BrandColorGallery from "@/components/BrandColorGallery";
 import { brands, brandGroups } from "@/data/site";
 import { brandColors } from "@/data/colors";
+import { withBasePath } from "@/lib/assetPath";
 
 export function generateStaticParams() {
   return brands.map((b) => ({ slug: b.slug }));
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       description: brand.desc,
       images: [
         {
-          url: brandColors[brand.slug]?.[0]?.src ?? "/images/hero.jpg",
+          url: brandColors[brand.slug]?.[0]?.src ?? withBasePath("/images/hero.jpg"),
           alt: `${brand.name} koleksiyonundan bir renk ve doku görünümü`,
         },
       ],
