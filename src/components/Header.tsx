@@ -63,8 +63,8 @@ export default function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${
         scrolled || open
-          ? "border-stone-200 bg-white/95 shadow-[0_1px_20px_rgba(0,0,0,0.06)] backdrop-blur"
-          : "border-transparent bg-white"
+          ? "border-stone-200 bg-[#f8f8f8]/95 shadow-[0_1px_20px_rgba(0,0,0,0.06)] backdrop-blur"
+          : "border-transparent bg-[#f8f8f8]"
       }`}
     >
       <div className="container-x flex h-16 items-center justify-between gap-6 lg:h-20">
