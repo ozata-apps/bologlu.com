@@ -1,0 +1,51 @@
+export type AppItem = {
+  src: string;
+  title: string;
+  brand: string;
+  cat: "mutfak" | "banyo" | "diger";
+};
+
+export const applications: AppItem[] = [
+  { src: "/images/apps/belenco-7537-metropol-grey-1.jpg", title: "Belenco 7537 Metropol Grey", brand: "belenco", cat: "mutfak" },
+  { src: "/images/apps/belenco-7537-metropol-grey-2.jpg", title: "Belenco 7537 Metropol Grey", brand: "belenco", cat: "mutfak" },
+  { src: "/images/apps/belenco-7537-metropol-grey-3.jpg", title: "Belenco 7537 Metropol Grey", brand: "belenco", cat: "mutfak" },
+  { src: "/images/apps/belenco-1110-perla-white.jpg", title: "Belenco 1110 Perla White", brand: "belenco", cat: "mutfak" },
+  { src: "/images/apps/belenco-9113-alinda.jpg", title: "Belenco 9113 Alinda", brand: "belenco", cat: "mutfak" },
+  { src: "/images/apps/belenco-4127-fairy-white.jpg", title: "Belenco 4127 Fairy White", brand: "belenco", cat: "mutfak" },
+  { src: "/images/apps/belenco-4123-kashmera-white.jpg", title: "Belenco 4123 Kashmera White", brand: "belenco", cat: "mutfak" },
+  { src: "/images/apps/belenco-4123-kashmera-white-2.jpg", title: "Belenco 4123 Kashmera White", brand: "belenco", cat: "mutfak" },
+  { src: "/images/apps/belenco-4123-kashmera-white-3.jpg", title: "Belenco 4123 Kashmera White", brand: "belenco", cat: "mutfak" },
+  { src: "/images/apps/belenco-4043-aizano-1.jpg", title: "Belenco 4043 Aizano", brand: "belenco", cat: "banyo" },
+  { src: "/images/apps/belenco-4043-aizano-ege-vitrifiye.jpg", title: "Belenco 4043 Aizano / Ege Vitrifiye Pınara Lavabo", brand: "belenco", cat: "banyo" },
+  { src: "/images/apps/belenco-2110-angel-white.jpg", title: "Belenco 2110 Angel White", brand: "belenco", cat: "mutfak" },
+  { src: "/images/apps/cimstone-759-savana-1.jpg", title: "Çimstone 759 Savana", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-759-savana-2.jpg", title: "Çimstone 759 Savana", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-880-toros-1.jpg", title: "Çimstone 880 Toros", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-880-toros-2.jpg", title: "Çimstone 880 Toros", brand: "cimstone", cat: "banyo" },
+  { src: "/images/apps/cimstone-880-toros-4.jpg", title: "Çimstone 880 Toros", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-880-toros-6.jpg", title: "Çimstone 880 Toros", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-880-toros-7.jpg", title: "Çimstone 880 Toros", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-880-toros-8.jpg", title: "Çimstone 880 Toros", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-930-ares-1.jpg", title: "Çimstone 930 Ares", brand: "cimstone", cat: "banyo" },
+  { src: "/images/apps/cimstone-930-ares-2.jpg", title: "Çimstone 930 Ares", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-930-ares-ege-vitrifiye.jpg", title: "Çimstone 930 Ares / Ege Vitrifiye Pınara Lavabo", brand: "cimstone", cat: "banyo" },
+  { src: "/images/apps/cimstone-936-olympos.jpg", title: "Çimstone 936 Olympos", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-936-olympos-2.jpg", title: "Çimstone 936 Olympos", brand: "cimstone", cat: "banyo" },
+  { src: "/images/apps/cimstone-936-olympos-3.jpg", title: "Çimstone 936 Olympos", brand: "cimstone", cat: "banyo" },
+  { src: "/images/apps/cimstone-900-lapland.jpg", title: "Çimstone 900 Lapland", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-890-terra-1.jpg", title: "Çimstone 890 Terra", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-890-terra-2.jpg", title: "Çimstone 890 Terra", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-890-terra-3.jpg", title: "Çimstone 890 Terra", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-890-terra-4.jpg", title: "Çimstone 890 Terra", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-890-terra-5.jpg", title: "Çimstone 890 Terra", brand: "cimstone", cat: "mutfak" },
+  { src: "/images/apps/cimstone-890-terra-ege-vitrifiye.jpg", title: "Çimstone 890 Terra / Ege Vitrifiye Pınara Lavabo", brand: "cimstone", cat: "banyo" },
+  { src: "/images/apps/coante-3312-milet.jpg", title: "Coante 3312 Milet", brand: "coante", cat: "mutfak" },
+  { src: "/images/apps/coante-7716-arte-black.jpg", title: "Coante 7716 Arte Black", brand: "coante", cat: "mutfak" },
+  { src: "/images/apps/granit-emerald-pearl.jpg", title: "Granit Emerald Pearl", brand: "granit", cat: "mutfak" },
+  { src: "/images/apps/granit-emerald-pearl-ege-vitrifiye.jpg", title: "Granit Emerald Pearl / Ege Vitrifiye Pınara Lavabo", brand: "granit", cat: "banyo" },
+  { src: "/images/apps/granit-new-imperial.jpg", title: "Granit New Imperial", brand: "granit", cat: "mutfak" },
+  { src: "/images/apps/granit-baltic-brown.jpg", title: "Granit Baltic Brown", brand: "granit", cat: "mutfak" },
+  { src: "/images/apps/granit-absolute-black-1.jpg", title: "Granit Absolute Black", brand: "granit", cat: "mutfak" },
+  { src: "/images/apps/granit-absolute-black-2.jpg", title: "Granit Absolute Black", brand: "granit", cat: "mutfak" },
+  { src: "/images/apps/granit-absolute-black-3.jpg", title: "Granit Absolute Black", brand: "granit", cat: "mutfak" },
+];
